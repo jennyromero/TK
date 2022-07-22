@@ -1,0 +1,32 @@
+# se le importa la libreria tkinter con tods sus funciones 
+from tkinter import *
+
+#----------------------- 
+#---ventana principal---
+#-----------------------
+
+ventana_principal=Tk()
+#titulo de la ventana 
+ventana_principal.title("suiza")
+
+# establecer tamaño de la ventana 
+ventana_principal.geometry("800x500")
+
+#color de fondo de la ventana principal
+ventana_principal.config(bg="red")
+
+#-----------------
+# frame entrada
+#-----------------
+frame_entrada = Frame(ventana_principal )
+frame_entrada.config (bg="grey86", width=80, height=200)
+frame_entrada.place(x=350,y=140)
+
+#-----------------
+# frame rojo
+#-----------------
+frame_rojo= Frame(ventana_principal )
+frame_rojo.config (bg="grey86", width=210, height=80)
+frame_rojo.place(x=290,y=200)
+
+ventana_principal.mainloop()
